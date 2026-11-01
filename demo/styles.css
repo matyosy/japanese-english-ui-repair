@@ -1,3 +1,5 @@
+@import url("fonts/split/font-faces.css");
+
 :root {
   font-family: "DM Sans", "Noto Sans JP", "Yu Gothic UI", Meiryo, sans-serif;
   color: #182521;
@@ -40,8 +42,8 @@ a { color: var(--green); }
 .page-layout { display: grid; grid-template-columns: minmax(0, 1fr) 324px; gap: 28px; align-items: stretch; padding: 23px 0 36px; }
 .form-card, .side-card { border: 1px solid rgba(222, 229, 220, .88); border-radius: 24px; box-shadow: 0 16px 48px rgba(35, 57, 46, .055); }
 .form-card { min-width: 0; padding: 48px 54px 36px; background: rgba(255, 255, 253, .94); }
-.step-label { display: flex; align-items: center; gap: 9px; color: #7b8981; font-size: 12px; letter-spacing: .04em; }
-.step-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--coral); box-shadow: 0 0 0 4px #f8e8df; }
+.step-label { display: flex; align-items: center; gap: 9px; min-height: 18px; color: #7b8981; font-size: 12px; letter-spacing: .04em; }
+.step-dot { flex: 0 0 7px; width: 7px; height: 7px; border-radius: 50%; background: var(--coral); box-shadow: 0 0 0 4px #f8e8df; }
 h1 { margin: 21px 0 12px; max-width: 17em; font-size: clamp(26px, 3vw, 36px); line-height: 1.35; letter-spacing: -.055em; font-weight: 700; }
 .intro { max-width: 58ch; margin: 0 0 30px; color: var(--muted); font-size: 14px; line-height: 1.95; }
 .field-label { display: block; margin-bottom: 9px; font-size: 13px; font-weight: 700; }
